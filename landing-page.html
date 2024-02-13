@@ -82,9 +82,10 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
         <p><a id="linkhome" href="https://aurelienmozoo.github.io/">Back to home</a></p>
         <script>
             window.addEventListener("scroll", () => {
+                const end = new Date().getTime();
                 window.top.timeSpentScrolling += 1.8;
                 const totalTimeWithoutScroll = ((end - window.top.start) / 1000) - (window.top.timeSpentScrolling / 1000)
-                const end = new Date().getTime();
+                
                 const totalTime = (end - window.top.start) / 1000
                 console.log("total time :" + totalTime)
                 console.log("totalTimeWithoutScroll : " +totalTimeWithoutScroll)
